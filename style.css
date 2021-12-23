@@ -1,0 +1,202 @@
+header,
+nav,
+section,
+article,
+figure,
+figcaption,
+aside,
+footer {
+  display: block;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?size=626&ext=jpg");
+  background-position: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.8em;
+  margin: 0px;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 20px auto 20px auto;
+  border: 2px solid #070606;
+  background-color: #ffffff;
+}
+
+header {
+  height: 155px;
+  width: 940px;
+  background-image: url("https://cdn.isellercommerce.com/5a7e35cbdeb14f7c807769322879c6f6/5e68ddb378c247c693463d91dc299fd3.png");
+}
+
+h1 {
+  text-indent: -9999px;
+  width: 940px;
+  height: 130px;
+  margin: 0px;
+}
+
+nav,
+footer {
+  clear: both;
+  color: #ffffff;
+  background-color: #444444;
+  height: 30px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 5px 0px 5px 30px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav li a {
+  color: #ffffff;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.Containers {
+  margin: 50px;
+  display: none;
+}
+
+.ContainersImage {
+  margin: 50px;
+  display: block;
+}
+
+.Back,
+.forward {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 5%;
+  padding: 15px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.7s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+.forward {
+  right: 36%;
+  border-radius: 4px 0 0 4px;
+}
+
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable,
+.dots:hover {
+  background-color: #717161;
+}
+
+nav li a:hover,
+nav li a.current {
+  font-weight: bolder;
+  color: #f0efef;
+}
+
+section.courses {
+  float: left;
+  width: 659px;
+  border-right: 1px solid #eeeeee;
+}
+
+article {
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
+hgroup {
+  margin-top: 40px;
+}
+
+figure {
+  float: left;
+  height: 220px;
+  padding: 5px;
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+figure img {
+  width: 280px;
+  height: 200px;
+}
+
+figcaption {
+  font-size: 90%;
+  text-align: center;
+}
+
+aside {
+  width: 230px;
+  float: left;
+  padding: 0px 0px 0px 20px;
+}
+
+aside section a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+aside section a:hover {
+  color: #000000;
+  background-color: #efefef;
+}
+
+a {
+  color: #3e51fd;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+h2 {
+  margin: 10px, 0px, 5px, 0px;
+  padding: 0px;
+}
+
+h3 {
+  margin: 0px, 0px, 10px, 0px;
+  color: #000000;
+}
+
+aside h2 {
+  padding: 30px 0px 10px 0px;
+  color: #002fff;
+}
+
+footer {
+  font-size: 80%;
+  height: 30px;
+  padding: 7px, 0px, 0px, 20px;
+}

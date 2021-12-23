@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Warung Anak Ayam</title>
+    <link rel="stylesheet" href="header,.css" />
+    <script>
+      var slidePosition = 1;
+      SlideShow(slidePosition);
+
+      function plusSlides(n) {
+        SlideShow((slidePosition += n));
+      }
+
+      function currentSlide(n) {
+        SlideShow((slidePosition = n));
+      }
+      z;
+      function SlideShow(n) {
+        var i;
+        var slides = document.getElementsByClassName("Containers");
+        if (n > slides.length) {
+          slidePosition = 1;
+        }
+        if (n < 1) {
+          slidePosition = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slidePosition - 1].style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Katalog Warung</h1>
+        <nav>
+          <ul>
+            <li><a href="" class="current">Beranda</a></li>
+            <li><a href="">Menu Makanan</a></li>
+            <li><a href="">Tentang</a></li>
+            <li><a href="">Kontak</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="courses">
+        <div class="slideshow-containers">
+          <div class="Containers ContainersImage">
+            <img src="img/1.jpeg" style="width: 100%" />
+          </div>
+          <div class="Containers">
+            <img src="img/2.jpg" style="width: 100%" />
+          </div>
+          <div class="Containers">
+            <img src="img/333.jpg" style="width: 100%" />
+          </div>
+          <a class="Back" onclick="plusSlides(-1)">❮</a>
+          <a class="forward" onclick="plusSlides(1)">❯</a>
+        </div>
+        <article>
+          <figure>
+            <img src="img/1.jpeg" alt="nasi liwet" />
+            <figcaption>Ayam Penyet</figcaption>
+          </figure>
+          <hgroup>
+            <h2>Ayam Penyet</h2>
+            <h3>Ayam penyet wonosobo</h3>
+          </hgroup>
+          <p>Ayam Penyet adalah ayam goreng yang di penyet dan diberi sambal.</p>
+        </article>
+        <article>
+          <figure>
+            <img src="img/2.jpg" alt="pecel" />
+            <figcaption>Ayam Goreng Krispi</figcaption>
+          </figure>
+          <hgroup>
+            <h2>Ayam Krispi</h2>
+            <h3>Ayam Krispi KFC</h3>
+          </hgroup>
+          <p>Ayam goreng krispi adalah ayam goreng yang digoreng dengan baluran tepung.</p>
+        </article>
+        <article>
+          <figure>
+            <img src="img/333.jpg" alt="nasi Campur" />
+            <figcaption>Ayam Bakar</figcaption>
+          </figure>
+          <hgroup>
+            <h2>Ayam Bakar</h2>
+            <h3>Ayam Bakar khas jawa barat</h3>
+          </hgroup>
+          <p>Ayam bakar adalah ayam yang dibakar dan diberi bumbu kecap manis.</p>
+        </article> 
+      </section>
+      <aside>
+        <section class="pupolar-recipes">
+          <h2>Menu Masakan</h2>
+          <a href="">Ayam Penyet</a>
+          <a href="">Ayam Goreng Krispi</a>
+          <a href="">Ayam Bakar</a>
+        </section>
+        <section class="contact-details">
+          <h2>Kontak</h2>
+          <p>
+            Warung jual aneka ayam.<br />
+            
+          </p>
+        </section>
+       
+      </aside>
+      <footer>&copy;Katalog Warung Anak Ayam</footer>
+    </div>
+  </body>
+</html>
